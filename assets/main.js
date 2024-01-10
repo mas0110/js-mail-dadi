@@ -38,7 +38,7 @@ document.getElementById("button").addEventListener("click", function(){
     } else if (randomplayer2html > randomplayer1html){
         result2.innerHTML = "player 2 ha vinto";
 
-    } else if(randomplayer1html == randomplayer2html);{
+    } else{
         result3.innerHTML = "Pareggio";
     }
 }
