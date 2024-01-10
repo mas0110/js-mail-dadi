@@ -17,15 +17,41 @@
     <!--  -->
     <!-- gioco dei dadi  -->
     <!--  -->
-    <div class="bg-success m-3 p-3 text-light rounded">
+    <div class="bg-success m-5 p-5 text-light rounded text-center">
         <h2>Gioco dei dadi</h2>
-        <div class=" text-dark rounded bg-warning player1 d-inline p-1 m-3">Player</div>
-        <div class=" text-dark rounded bg-warning player2 d-inline p-1">Computer</div>
-        <button id="button" class=" d-block btn btn-primary m-3" >gioca</button>
-        <div class="result1 text-light m-3"></div>
-        <div class="result2 text-light m-3"></div>
-        <div class="result3 text-light m-3"></div>
-        <button id="retry" class=" d-block btn btn-primary m-3">ritenta</button>
+        <div class="container my-2">
+            <div class="row justify-content-center gap-3">
+                <div class="col-2 text-dark rounded bg-warning">
+                    Player:
+                    <span class="text-dark player1 p-1 m-3"> </span>
+                </div>
+                <div class="col-2 text-dark rounded bg-warning">
+                    Computer:
+                    <span class="text-dark player2 p-1 m-3"> </span>
+                </div>
+            </div>
+        </div>
+        <div class="result1 text-light m-3">
+        </div>
+        <div class="result2 text-light m-3">
+        </div>
+        <div class="result3 text-light m-3">
+        </div>
+        <button id="button" class="btn btn-primary m-3" >
+            Play
+        </button>
+        <button id="retry" class=" btn btn-primary m-3">
+            Riprova
+        </button>
+        <div class="result1 text-light m-3">
+
+        </div>
+        <div class="result2 text-light m-3">
+
+        </div>
+        <div class="result3 text-light m-3">
+
+        </div>
     </div>
 
 
@@ -35,7 +61,7 @@
     <!--  -->
     <!-- richiesta mail  -->
     <!--  -->
-    <div class="bg-success m-3 p-3 text-light rounded">
+    <div class="bg-success m-5 p-5 text-light rounded">
         <h2>mail richiesta</h2>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Inserisci la tua mail</label>

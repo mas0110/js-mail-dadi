@@ -1,9 +1,9 @@
 // 
 // variabili del gioco dei dadi 
 // 
-let player1html = document.querySelector("div.player1")
+let player1html = document.querySelector("span.player1")
 
-let player2html = document.querySelector("div.player2")
+let player2html = document.querySelector("span.player2")
 
 let sendbutton = document.getElementById("button")
 
@@ -31,13 +31,13 @@ document.getElementById("button").addEventListener("click", function(){
      
 
     if(randomplayer1html > randomplayer2html){
-        result1.innerHTML = "player 1 ha vinto";
+        result1.innerHTML = "<h4>Hai vinto</h4>";
 
     } else if (randomplayer2html > randomplayer1html){
-        result2.innerHTML = "player 2 ha vinto";
+        result2.innerHTML = '<h4>Ha vinto il computer</h4>';
 
     } else{
-        result3.innerHTML = "Pareggio";
+        result3.innerHTML = "<h4>Pareggio</h4>";
     }
 }
 )
@@ -59,23 +59,25 @@ let VariabileControllore = false
 
 let answer = document.querySelector("div.risposta")
 
-const richiestamail = document.getElementById("mailControl").Value;
+const usermail = document.getElementById("mailControl").Value;
+
+console.log(usermail)
 
 document.getElementById("mailcheck").addEventListener("click", function(){
-
+    
        
   for(let i = 0; i < mail.length; i++){
-    if(mail[i] === richiestamail){
+    if(mail[i] === usermail){
         VariabileControllore = true;
     }
 
     if(VariabileControllore == true){
         console.log("si")
-        answer.innerHTML = "La mail è presente";
+        answer.innerHTML = "La mail è valida";
         
     }else{
         console.log("no")
-        answer.innerHTML = "La mail non è presente";
+        answer.innerHTML = "La mail non è valida";
     }
 }
 }
