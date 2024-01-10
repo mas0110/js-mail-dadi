@@ -4,6 +4,8 @@ let player2html = document.querySelector("div.player2")
 
 let sendbutton = document.getElementById("button")
 
+let refreshbutton = document.getElementById("retry")
+
 let result1 = document.querySelector("div.result1")
 
 let result2 = document.querySelector("div.result2")
@@ -36,8 +38,13 @@ document.getElementById("button").addEventListener("click", function(){
     } else if (randomplayer2html > randomplayer1html){
         result2.innerHTML = "player 2 ha vinto";
 
-    } else (randomplayer1html == randomplayer2html);{
+    } else if(randomplayer1html == randomplayer2html);{
         result3.innerHTML = "Pareggio";
     }
+}
+)
+document.getElementById("retry").addEventListener("click", function(){
+
+    location.reload(true);
 }
 )
