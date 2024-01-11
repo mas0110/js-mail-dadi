@@ -52,33 +52,29 @@ document.getElementById("retry").addEventListener("click", function(){
 
 // 
 // richiesta della mail 
-// 
-const mail = ["marco@gmail.com","luca@gmail.com","lisa@gmail.com"]
+//
 
-let VariabileControllore = false
+const mail = ["marco@gmail.com", "luca@gmail.com", "lisa@gmail.com"];
 
-let answer = document.querySelector("div.risposta")
+let answer = document.querySelector("div.risposta");
 
-const usermail = document.getElementById("mailControl").Value;
+document.getElementById("mailcheck").addEventListener("click", function () {
+    const usermail = document.getElementById("mailControl").value;
+    console.log(usermail);
 
-console.log(usermail)
+    let VariabileControllore = false;
 
-document.getElementById("mailcheck").addEventListener("click", function(){
-    
-       
-  for(let i = 0; i < mail.length; i++){
-    if(mail[i] === usermail){
-        VariabileControllore = true;
+    for (let i = 0; i < mail.length; i++) {
+        if (mail[i] === usermail) {
+            VariabileControllore = true;
+        }
     }
 
-    if(VariabileControllore == true){
-        console.log("si")
+    if (VariabileControllore == true) {
+        console.log("si");
         answer.innerHTML = "La mail è valida";
-        
-    }else{
-        console.log("no")
+    } else {
+        console.log("no");
         answer.innerHTML = "La mail non è valida";
     }
-}
-}
-)
+});
